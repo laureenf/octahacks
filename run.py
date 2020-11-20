@@ -2,8 +2,8 @@ from datetime import datetime
 from flask import Flask,redirect,render_template,url_for
 from flask_login import UserMixin,LoginManager,login_user,logout_user
 from flask_sqlalchemy import SQLAlchemy
-from wtforms import StringField, PasswordField, SubmitField, IntegerField, BooleanField, DateField
-from wtforms.validators import DataRequired, Email, EqualTo
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, DateField
+from wtforms.validators import DataRequired, Email, EqualTo, Length
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
@@ -17,7 +17,7 @@ login_manager.login_view='login'
 
 @login_manager.user_loader
 def load_user(user_id):
-  return Police.get(user_id)
+  return Station.get(user_id)
 
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -25,32 +25,26 @@ class Item(db.Model):
     description = db.Column(db.String(250))
     place_found = db.Column(db.String(50), nullable=False)
     date_found = db.Column(db.DateTime, default=datetime.utcnow)
-    station_id = db.Column(db.Integer, db.ForeignKey('station.id', onupdate="CASCADE", ondelete="CASCADE"), nullable=False)
 
+    station_id = db.Column(db.Integer, db.ForeignKey('station.id', onupdate="CASCADE", ondelete="CASCADE"), nullable=False)
     station = db.relationship('Station')
 
-class Station(db.Model):
+class Station(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     address = db.Column(db.String(50), nullable=False)
     contact_no = db.Column(db.String(10), unique=True, nullable=False)
-
-class Police(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), nullable=False)
     email = db.Column(db.String(60), unique=True, nullable=False)
     password_hash = db.Column(db.String(60), nullable=False)
-    station_id = db.Column(db.Integer, db.ForeignKey('station.id', onupdate="CASCADE", ondelete="CASCADE"), nullable=False)
-    station = db.relationship('Station')
 
     def __repr__(self):
-        return '<User {}>'.format(self.name)
+        return '<Station {}>'.format(self.name)
 
     def set_password(self, password):
         self.password_hash = password
 
     def check_password(self, password):
-         return True if self.password_hash==password else False
+         return True if self.password_hash == password else False
 
 
 @app.route('/')
@@ -59,11 +53,11 @@ def hello():
 
 @app.route('/login', methods=['GET','POST'])
 def login():
-  render_template('base.html',current_user=None)
+  render_template('base.html', current_user=None)
   form = LoginForm(csrf_enabled=False)
   if form.validate_on_submit():
     # query User here:
-    user = Police.query.filter_by(email=form.email.data).first()
+    user = Station.query.filter_by(email=form.email.data).first()
     # check if a user was found and the form password matches here:
     if user and user.check_password(form.password.data):
       # login user here:
@@ -79,7 +73,7 @@ def login():
 def register():
   form = RegistrationForm(csrf_enabled=False)
   if form.validate_on_submit():
-    user = Police(email=form.email.data, name=form.name.data, station=form.station.data)
+    user = Station(email=form.email.data, name=form.name.data, station=form.station.data)
     user.set_password(form.password.data)
     db.session.add(user)
     db.session.commit()
@@ -93,12 +87,11 @@ def logout():
 
 
 class RegistrationForm(FlaskForm):
-  name=StringField('Name', validators=[DataRequired()])
-  number=IntegerField('Number', validators=[DataRequired()])
+  name = StringField('Name', validators=[DataRequired()])
+  number = StringField('Phone Number', validators=[DataRequired(), Length(min=10, max=10, message='Phone number must be 10 digits long')])
   email = StringField('Email', validators=[DataRequired(), Email()])
-  station = StringField('Email', validators=[DataRequired(), Email()])
   password = PasswordField('Password', validators=[DataRequired()])
-  password2 = PasswordField('Repeat Password', validators=[DataRequired(), EqualTo('password')])
+  confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
   submit = SubmitField('Register')    
 
 class LoginForm(FlaskForm):
