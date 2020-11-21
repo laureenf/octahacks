@@ -1,5 +1,5 @@
 from datetime import datetime
-from flask import Flask,redirect,render_template,url_for, request
+from flask import Flask,redirect,render_template,url_for, request, flash
 from flask_login import UserMixin,LoginManager,login_user,logout_user, login_required, current_user
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
@@ -69,8 +69,8 @@ def login():
       next_page = request.args.get('next')
       return redirect(next_page) if next_page else redirect(url_for('enteritem'))
     else:
-      return redirect(url_for('login', _external=True))
-  return render_template('login.html')
+      return redirect(url_for('login', _external=True, is_login=False))
+  return render_template('login.html', is_login=True)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -83,7 +83,9 @@ def register():
       db.session.add(user)
       db.session.commit()
       return redirect(url_for('login'))
-  return render_template('register.html', title='Register') 
+    else:
+      return render_template('register.html', title='Register', wrong_pw=True)
+  return render_template('register.html', title='Register', wrong_pw=False) 
 
 @app.route("/logout")
 @login_required
@@ -105,7 +107,8 @@ def enteritem():
 def itemview():
   items = Item.query.all()
   search = request.args.get('search')
-  items = Item.query.filter_by(name=search)
+  if search:
+    items = Item.query.filter_by(name=search)
   return render_template('itemview.html', items=items)
 
 if __name__ == '__main__':

@@ -17,12 +17,15 @@
             <div class="form-group">
               <input class="form-control" type="text" name="stationname"  placeholder="Station Name"><br/>
               <input class="form-control" type="email" name="mailid"  placeholder=" Email Id"><br/>
+              
+              {% if wrong_pw %}
+              <input class="form-control is-invalid" type="password" name="pass"  placeholder=" Password" id="passvalid"><br/>
+              <span id="passvalid" class="invalid-feedback">Passwords dont match</span>
+              {%else%}
               <input class="form-control " type="password" name="pass"  placeholder=" Password" id="passvalid"><br/>
-              <div id="passvalid" class="invalid-feedback">
-              </div>
+              {%endif%}
               <input class="form-control" type="password" name="pass2"  placeholder="Confirm Password" id="cpassvalid"><br/>
-              <div id="cpassvalid" class="invalid-feedback">
-              </div>
+              
               <input class="form-control" type="text" name="number"  placeholder="Contact Number"><br/>
               <input class="form-control" type="text" name="address"  placeholder="Address"><br/>
               <button class="btn btn-primary mx-auto mb-3" type="submit">Register</button>

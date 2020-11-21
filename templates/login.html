@@ -10,16 +10,22 @@
 </head>
 <body class="p-3" style="background:#17A5B3">
       <h1 class=" text-center text-white font-weight-bold">STATION LOGIN</h1>
-      <img class="decimg" src="images/private-detective.svg" alt="">
-      <img class= "txtbub-1" src="images/note - 1.svg" alt="">
+      <img class="decimg" src="../static/images/private-detective.svg" alt="">
+      <img class= "txtbub-1" src="../static/images/note_-_1.svg" alt="">
         <div class="mt-5 container pt-3">
           <form method="post">
             <div class="form-group">
+              
+              {% if not is_login %}
+              <input class="form-control is-invalid" type="email" required name="mailid" placeholder=" Email Id"><br/>
+              <input class="form-control is-invalid" type="password" required name="pass" placeholder=" Password"><br/>
+              {% else %}
               <input class="form-control" type="email" required name="mailid" placeholder=" Email Id"><br/>
               <input class="form-control" type="password" required name="pass" placeholder=" Password"><br/>
+              {% endif %}
               <div class="row">
                 <button class="btn btn-primary mx-auto mb-3" type="submit">Login</button>
-                <a class="text-decoration-none mx-auto mb-3" href="register.html"><button class="btn btn-primary" type="button" name="button">Sign Up</button></a>
+                <a class="text-decoration-none mx-auto mb-3" href="{{url_for('register')}}"><button class="btn btn-primary" type="button" name="button">Sign Up</button></a>
               </div>
             </div>
           </form>
