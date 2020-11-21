@@ -1,6 +1,19 @@
-body{
-  background: url("bckgnd.jpg");
-  background-size: cover;
+@keyframes spring {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  10% {
+    transform: scale(1.2, 0.6);
+  }
+  30% {
+    transform: scale(0.8, 1.1) translateY(-10px);
+  }
+  50% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .container{
   width:30% !important;
@@ -9,4 +22,28 @@ body{
 }
 .container h2{
   text-align: center;
+}
+.decimg{
+  position: fixed;
+  width:30%;
+  bottom: 0;
+}
+.txtbub{
+  position: absolute !important;
+  top:-15%;
+  right:68%;
+  width: 30%;
+  animation: spring 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.txtbub-1{
+  position: absolute !important;
+  top:-17%;
+  right:68%;
+  width: 32%;
+  animation: spring 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
