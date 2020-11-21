@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer"
+   enable-background="new 0 0 64 64"
+   height="512"
+   viewBox="0 0 64 64"
+   width="512"
+   version="1.1"
+   sodipodi:docname="note.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="1.0729879"
+     inkscape:cx="240.49682"
+     inkscape:cy="363.06542"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer" />
+  <path
+     style="fill:#000000;stroke-width:0.845152"
+     d="m 46.585351,20.837931 -44.2179651,-0.0057 c -0.4367881,-5.6e-5 -0.9808471,0.215443 -0.9811409,1.190115 l -0.00629,20.865621 c -1.226e-4,0.406704 0.3491487,0.90755 0.9722974,0.889022 l 2.8508958,-0.0345 2.7671047,9.34455 0.1683589,0.222514 c 0.1469356,0.133103 0.1922847,0.178499 0.4137223,-0.02825 0,0 -0.094345,0.18346 0.3008519,-0.469038 L 9.6840539,51.386673 13.501887,44.112862 52.534291,43.9804 c 0.898267,-0.003 1.09528,-0.73113 1.110213,-1.428902 0.0039,-0.182606 -0.0036,-19.571755 -0.01783,-20.286996 -0.01878,-0.944444 -0.456133,-1.427021 -1.371108,-1.426958 z m 6.283619,22.216819 -39.14893,-0.0112 c -0.448175,0.003 -0.711978,0.23829 -0.983907,0.68748 L 8.4208133,51.918298 6.1038763,43.516577 C 5.9892561,43.100938 6.0869727,42.737245 5.5454168,42.72088 l -3.327026,0.04053 -0.016858,-21.063783 50.6498682,-0.05175 z"
+     id="path19"
+     sodipodi:nodetypes="csssccccscccsssscccccsccccc" />
+  <rect
+     style="fill:#ffffff;stroke-width:0.125"
+     id="rect7"
+     width="50.667439"
+     height="21.357124"
+     x="2.2015328"
+     y="21.697626" />
+  <path
+     style="fill:#ffffff;stroke-width:0.368528"
+     id="path20"
+     sodipodi:type="arc"
+     sodipodi:cx="24.786215"
+     sodipodi:cy="35.262226"
+     sodipodi:rx="6.360878"
+     sodipodi:ry="12.417447"
+     sodipodi:start="3.5997588"
+     sodipodi:end="5.1593952"
+     sodipodi:arc-type="slice"
+     d="m 19.081365,29.769938 a 6.360878,12.417447 0 0 1 8.454453,-5.705086 l -2.749603,11.197374 z"
+     transform="matrix(0.69658787,0.71747149,-0.25083403,0.96803011,0,0)" />
+  <path
+     style="fill:#ffff00;stroke-width:0.125"
+     id="path22"
+     sodipodi:type="arc"
+     sodipodi:cx="20.552328"
+     sodipodi:cy="46.971668"
+     sodipodi:rx="0.3555766"
+     sodipodi:ry="0.071115322"
+     sodipodi:start="4.1363605"
+     sodipodi:end="5.3470605"
+     sodipodi:arc-type="slice"
+     d="m 20.358646,46.912029 a 0.3555766,0.07111532 0 0 1 0.404508,0.0024 l -0.210826,0.05727 z" />
+  <text
+     transform="scale(0.97154509,1.0292883)"
+     id="text12"
+     y="34.122269"
+     x="4.3239622"
+     style="font-style:normal;font-weight:normal;font-size:9.67116px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.241778"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9.67116px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.241778"
+       y="34.122269"
+       x="4.3239622"
+       id="tspan10"
+       sodipodi:role="line">Who are u?</tspan></text>
+</svg>

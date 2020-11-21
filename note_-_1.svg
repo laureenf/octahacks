@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="note - 1.svg"
+   version="1.1"
+   width="512"
+   viewBox="0 0 64 64"
+   height="512"
+   enable-background="new 0 0 64 64"
+   id="Layer">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     inkscape:current-layer="Layer"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:cy="293.54242"
+     inkscape:cx="376.04432"
+     inkscape:zoom="1.5208438"
+     showgrid="false"
+     id="namedview22"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
+  <path
+     sodipodi:nodetypes="csssccccccccsssscccccsccccc"
+     id="path19"
+     d="m 54.227,20.837931 -51.692696,-0.0057 c -0.510624,-5.6e-5 -1.1466523,0.215443 -1.1469957,1.190115 l -0.00735,20.865621 c -1.433e-4,0.406704 0.4081698,0.90755 1.1366573,0.889022 l 14.8047344,-0.128178 3.487161,6.820695 0.655923,1.019487 c 0.171774,0.133103 0.74523,0.414751 0.74523,0.414751 0,0 0.184159,-0.07738 0.364801,-0.379715 l 0.173987,-0.777744 0.596768,-6.827643 37.836352,0.06176 c 1.050118,0.0017 1.280429,-0.73113 1.297887,-1.428902 0.0046,-0.182606 -0.0042,-19.571755 -0.02084,-20.286996 -0.02195,-0.944444 -0.533239,-1.427021 -1.602884,-1.426958 z m 7.345819,22.216819 -37.77417,-0.06147 c -0.523936,0.003 -1.008641,-0.01307 -1.326538,0.436124 l -0.499704,7.618336 -3.61,-7.229535 C 18.159779,43.412413 18.28387,43.038872 17.650775,43.022507 L 2.3601224,42.76141 2.3404147,21.697627 61.55228,21.645877 Z"
+     style="fill:#000000;stroke-width:0.913798" />
+  <rect
+     y="21.697626"
+     x="2.2015328"
+     height="21.357124"
+     width="59.404724"
+     id="rect7"
+     style="fill:#ffffff;stroke-width:0.135349" />
+  <path
+     transform="matrix(0.99152277,0.12993307,0.14492609,0.98944248,0,0)"
+     d="m 11.356475,40.713257 a 5.2434139,12.11965 0 0 1 5.900092,-1.911048 l -2.35122,10.832858 z"
+     sodipodi:arc-type="slice"
+     sodipodi:end="5.1773791"
+     sodipodi:start="3.9689483"
+     sodipodi:ry="12.11965"
+     sodipodi:rx="5.2434139"
+     sodipodi:cy="49.635067"
+     sodipodi:cx="14.905347"
+     sodipodi:type="arc"
+     id="path20"
+     style="fill:#ffffff;stroke-width:0.828268" />
+  <text
+     transform="scale(0.90181163,1.108879)"
+     id="text11"
+     y="32.033577"
+     x="3.3895404"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.04039px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.22601"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:9.04039px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.22601"
+       y="32.033577"
+       x="3.3895404"
+       id="tspan9"
+       sodipodi:role="line">Enter Credentials</tspan></text>
+</svg>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer"
+   enable-background="new 0 0 64 64"
+   height="512"
+   viewBox="0 0 64 64"
+   width="512"
+   version="1.1"
+   sodipodi:docname="note - 3.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="1.5308862"
+     inkscape:cx="361.97568"
+     inkscape:cy="303.42274"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer" />
+  <path
+     style="fill:#000000;stroke-width:0.899933"
+     d="m 52.635462,20.837931 -50.1359223,-0.0057 c -0.495246,-5.6e-5 -1.1121197,0.215443 -1.1124529,1.190115 l -0.00713,20.865621 c -1.39e-4,0.406704 0.3958774,0.90755 1.1024258,0.889022 l 15.2713824,0.166394 3.685231,6.247799 0.756979,1.132545 c 0.166601,0.133103 0.570473,0.75475 0.909074,1.160687 0,0 0.506415,0.797714 0.954468,0.145216 l 0.238348,-0.989627 1.018084,-7.527141 34.064636,-0.132462 c 1.018484,-0.004 1.241868,-0.73113 1.258799,-1.428902 0.0044,-0.182606 -0.0041,-19.571755 -0.02022,-20.286996 -0.02129,-0.944444 -0.51718,-1.427021 -1.554611,-1.426958 z m 7.124594,22.216819 -34.443331,-0.0112 c -0.508157,0.003 -0.30227,0.156112 -0.610593,0.605302 l -1.207914,8.639935 -5.118182,-8.619111 c -0.22235,-0.374442 -0.07278,-0.427434 -0.686812,-0.443799 L 2.2015328,43.054749 2.3114897,21.697627 59.740136,21.645877 Z"
+     id="path19"
+     sodipodi:nodetypes="csssccccscccsssscccccsccccc" />
+  <rect
+     style="fill:#ffffff;stroke-width:0.133054"
+     id="rect7"
+     width="57.407116"
+     height="21.357124"
+     x="2.2015328"
+     y="21.697626" />
+  <path
+     style="fill:#ffffff;stroke-width:0.368528"
+     id="path20"
+     sodipodi:type="arc"
+     sodipodi:cx="21.657207"
+     sodipodi:cy="43.000919"
+     sodipodi:rx="6.360878"
+     sodipodi:ry="12.417447"
+     sodipodi:start="3.7184996"
+     sodipodi:end="5.1724228"
+     sodipodi:arc-type="slice"
+     d="M 16.325814,36.22802 A 6.360878,12.417447 0 0 1 24.4813,31.874421 l -2.824093,11.126498 z"
+     transform="matrix(0.89918302,0.43757273,0.09358928,0.99561089,0,0)" />
+  <text
+     transform="scale(0.90043292,1.1105769)"
+     id="text12"
+     y="31.657127"
+     x="7.3750277"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.1421px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17855"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.1421px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.17855"
+       y="31.657127"
+       x="7.3750277"
+       id="tspan10"
+       sodipodi:role="line">Enter Item Details</tspan></text>
+</svg>
