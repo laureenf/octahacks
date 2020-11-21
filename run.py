@@ -1,7 +1,8 @@
 from datetime import datetime
 from flask import Flask,redirect,render_template,url_for
-from flask_login import UserMixin,LoginManager,login_user,logout_user
+from flask_login import UserMixin,LoginManager,login_user,logout_user, login_required
 from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, DateField
 from wtforms.validators import DataRequired, Email, EqualTo, Length
 
@@ -48,12 +49,12 @@ class Station(db.Model, UserMixin):
 
 
 @app.route('/')
-def hello():
-    return 'Hello World!'
+def home():
+    return render_template('index.html')
 
 @app.route('/login', methods=['GET','POST'])
 def login():
-  render_template('base.html', current_user=None)
+  # render_template('base.html', current_user=None)
   form = LoginForm(csrf_enabled=False)
   if form.validate_on_submit():
     # query User here:
@@ -62,8 +63,8 @@ def login():
     if user and user.check_password(form.password.data):
       # login user here:
       login_user(user, remember=form.remember.data)
-      render_template('base.html',current_user=user)
-      next_page = url_for('index')
+      render_template('index.html',current_user=user)
+      next_page = url_for('home')
       return redirect(next_page)
     else:
       return redirect(url_for('login',_external=True))
@@ -83,7 +84,7 @@ def register():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('index'))   
+    return redirect(url_for('home'))   
 
 
 class RegistrationForm(FlaskForm):
