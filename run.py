@@ -86,21 +86,6 @@ def logout():
     logout_user()
     return redirect(url_for('home'))   
 
-
-class RegistrationForm(FlaskForm):
-  name = StringField('Name', validators=[DataRequired()])
-  number = StringField('Phone Number', validators=[DataRequired(), Length(min=10, max=10, message='Phone number must be 10 digits long')])
-  email = StringField('Email', validators=[DataRequired(), Email()])
-  password = PasswordField('Password', validators=[DataRequired()])
-  confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
-  submit = SubmitField('Register')    
-
-class LoginForm(FlaskForm):
-  email = StringField('Email',validators=[DataRequired(), Email()])
-  password = PasswordField('Password', validators=[DataRequired()])
-  remember = BooleanField('Remember Me')
-  submit = SubmitField('Login')    
-
 if __name__ == '__main__':
     app.run(debug=True)
 
